@@ -5,3 +5,4 @@ plugins {
 }
 
 include("factory-method:java")
+include("factory-method:typescript")

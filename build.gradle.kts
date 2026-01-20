@@ -5,19 +5,25 @@ plugins {
 version = "1.0.0"
 
 subprojects {
-    plugins.apply("java")
+    plugins.withId("java") {
+        java {
+            toolchain {
+                languageVersion.set(JavaLanguageVersion.of(21))
+            }
+        }
 
-    repositories {
-        mavenCentral()
-    }
+        repositories {
+            mavenCentral()
+        }
 
-    dependencies {
-        testImplementation(platform("org.junit:junit-bom:5.10.0"))
-        testImplementation("org.junit.jupiter:junit-jupiter")
-        testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-    }
+        dependencies {
+            testImplementation(platform("org.junit:junit-bom:5.10.0"))
+            testImplementation("org.junit.jupiter:junit-jupiter")
+            testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+        }
 
-    tasks.test {
-        useJUnitPlatform()
+        tasks.test {
+            useJUnitPlatform()
+        }
     }
 }

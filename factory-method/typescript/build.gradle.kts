@@ -1,6 +1,5 @@
 plugins {
-    java
+    libs.plugins.node
 }
 
-group = "ch.no1hardy"
 version = "1.0.0"
