@@ -2,13 +2,10 @@
   "include": ["src/**/*.ts"],
   "compilerOptions": {
     "baseUrl": "./src",
-    "paths": {
-      "*": ["*", "*.js"]
-    },
     "rootDir": "./src",
     "outDir": "./dist",
-    "module": "ESNext",
-    "moduleResolution": "bundler",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "target": "ESNext",

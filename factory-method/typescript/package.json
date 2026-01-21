@@ -4,7 +4,7 @@
   "description": "",
   "license": "LGPL-3.0-only",
   "author": "NoOneHardy",
-  "type": "module",
+  "type": "commonjs",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
