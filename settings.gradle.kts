@@ -7,3 +7,4 @@ plugins {
 include("factory-method:java")
 include("factory-method:typescript")
 include("adapter:java")
+include("adapter:typescript")
