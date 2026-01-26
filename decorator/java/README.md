@@ -66,10 +66,7 @@ src/main/java/ch/no1hardy/
 # Build the project
 ./gradlew :decorator:java:build
 
-# Run the application (if you've added the run task to build.gradle.kts)
-./gradlew :decorator:java:run
-
-# Or run directly with Java
+# Run the application
 cd decorator/java
 java -cp build/classes/java/main ch.no1hardy.App
 ```
