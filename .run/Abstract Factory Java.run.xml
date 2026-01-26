@@ -1,13 +1,7 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Factory Method Java" type="Application" factoryName="Application">
+  <configuration default="false" name="Abstract Factory Java" type="Application" factoryName="Application">
     <option name="MAIN_CLASS_NAME" value="ch.no1hardy.App" />
-    <module name="design-patterns.factory-method.java.main" />
-    <extension name="coverage">
-      <pattern>
-        <option name="PATTERN" value="ch.no1hardy.*" />
-        <option name="ENABLED" value="true" />
-      </pattern>
-    </extension>
+    <module name="design-patterns.abstract-factory.java.main" />
     <extension name="net.ashald.envfile">
       <option name="IS_ENABLED" value="false" />
       <option name="IS_SUBST" value="false" />

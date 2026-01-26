@@ -6,3 +6,4 @@ plugins {
 
 include("factory-method:java")
 include("factory-method:typescript")
+include("abstract-factory:java")
