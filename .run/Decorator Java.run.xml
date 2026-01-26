@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Decorator Java" type="Application" factoryName="Application">
     <option name="MAIN_CLASS_NAME" value="ch.no1hardy.App" />
-    <module name="design-patterns.adapter.java.main" />
+    <module name="design-patterns.decorator.java.main" />
     <extension name="net.ashald.envfile">
       <option name="IS_ENABLED" value="false" />
       <option name="IS_SUBST" value="false" />
