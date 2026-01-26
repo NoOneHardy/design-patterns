@@ -7,5 +7,5 @@ export abstract class Spawner {
     return mob
   }
 
-  protected abstract createMob(): Mob
+  public abstract createMob(): Mob
 }
