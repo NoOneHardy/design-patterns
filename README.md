@@ -64,6 +64,13 @@ The Adapter pattern allows objects with incompatible interfaces to work together
 
 **Real-world analogy**: A travel adapter that lets you plug your device into different outlet types around the world, converting one plug shape to match the outlet.
 
+#### Decorator
+- **Java Implementation**: [decorator/java/](decorator/java/)
+
+The Decorator pattern allows you to add new behaviors to objects dynamically by placing them inside special wrapper objects called decorators. It provides a flexible alternative to subclassing for extending functionality.
+
+**Real-world analogy**: Adding toppings to a pizza - each topping wraps around the base pizza (or another decorated pizza) and adds its own flavor, without changing the pizza itself. You can stack multiple toppings to create exactly what you want.
+
 ## Repository Structure
 
 ```
@@ -83,6 +90,10 @@ design-patterns/
 │   └── typescript/                   # TypeScript implementation
 │       ├── README.md                 # Detailed TypeScript-specific guide
 │       └── src/                      # TypeScript source code
+├── decorator/                        # Decorator pattern (Structural)
+│   └── java/                         # Java implementation
+│       ├── README.md                 # Detailed Java-specific guide
+│       └── src/                      # Java source code
 └── [more patterns coming soon...]
 ```
 
