@@ -12,7 +12,7 @@ import ch.no1hardy.entity.ArmorStand;
  *   <li>Contains a reference to the ADAPTEE (ArmorStand) that needs to be adapted</li>
  *   <li>Translates calls from the target interface to the adaptee's interface</li>
  * </ul>
- * </p>
+ *
  * <p>
  * This adapter makes an ArmorStand object usable in contexts where a Block is expected.
  * When the client calls place() on this adapter, the adapter internally calls spawn()
@@ -25,7 +25,6 @@ import ch.no1hardy.entity.ArmorStand;
  *   <li>ADAPTEE: ArmorStand class (what we need to adapt)</li>
  *   <li>ADAPTER: This class (ArmorStandBlockAdapter - bridges the gap)</li>
  * </ul>
- * </p>
  */
 public class ArmorStandBlockAdapter extends Block {
     /**

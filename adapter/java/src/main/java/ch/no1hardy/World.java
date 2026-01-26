@@ -25,7 +25,7 @@ public class World {
      *   <li>Regular Block objects directly</li>
      *   <li>Adapted objects (like ArmorStandBlockAdapter) that extend Block</li>
      * </ul>
-     * </p>
+     *
      * <p>
      * The client doesn't need to know whether it's working with a real Block
      * or an adapter - it just calls place() and the right behavior occurs.

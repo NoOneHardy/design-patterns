@@ -22,13 +22,13 @@ import ch.no1hardy.entity.ArmorStand;
  *   <li>Block has a place() method, but Entity has a spawn() method</li>
  * </ul>
  * We can't directly pass an ArmorStand to World.place() - it won't compile!
- * </p>
+ *
  * <p>
  * <strong>SOLUTION:</strong><br>
  * The ArmorStandBlockAdapter wraps an ArmorStand and makes it look like a Block.
  * When World calls place() on the adapter, the adapter translates this to a spawn()
  * call on the wrapped ArmorStand.
- * </p>
+ *
  * <p>
  * <strong>PATTERN PARTICIPANTS:</strong>
  * <ul>
@@ -37,7 +37,7 @@ import ch.no1hardy.entity.ArmorStand;
  *   <li><strong>ADAPTEE:</strong> ArmorStand - the existing class with incompatible interface</li>
  *   <li><strong>ADAPTER:</strong> ArmorStandBlockAdapter - converts adaptee's interface to target interface</li>
  * </ul>
- * </p>
+ *
  * <p>
  * <strong>BENEFITS:</strong>
  * <ul>
@@ -46,7 +46,6 @@ import ch.no1hardy.entity.ArmorStand;
  *   <li>Follows the Open/Closed Principle - open for extension, closed for modification</li>
  *   <li>Single Responsibility Principle - the adapter's only job is interface conversion</li>
  * </ul>
- * </p>
  */
 public class App {
     /**
@@ -58,7 +57,6 @@ public class App {
      *   <li>Why we can't place an ArmorStand directly (incompatible interface)</li>
      *   <li>Using an adapter to place an ArmorStand as if it were a Block</li>
      * </ol>
-     * </p>
      *
      * @param args command line arguments (not used)
      */
@@ -84,12 +82,12 @@ public class App {
         System.out.println("=== Scenario 3: Using the Adapter Pattern ===");
         // Create an ADAPTER that wraps the ArmorStand and makes it look like a Block
         ArmorStandBlockAdapter adapter = new ArmorStandBlockAdapter(armorStand);
-        
+
         // Now we can place the ArmorStand through the adapter!
         // The adapter translates place() calls into spawn() calls
         world.place(adapter); // ✓ This works! The adapter makes ArmorStand compatible
         System.out.println();
-        
+
         System.out.println("Success! The adapter allowed us to place an ArmorStand");
         System.out.println("in the World without modifying World, Block, or ArmorStand classes.");
     }
