@@ -54,12 +54,29 @@ The Factory Method pattern provides an interface for creating objects in a paren
 
 **Real-world analogy**: Different stores in a mall each create their own specific products, but all follow the same general process of creating and selling items.
 
+### Structural Patterns
+
+#### Adapter
+- **Java Implementation**: [adapter/java/](adapter/java/)
+- **TypeScript Implementation**: [adapter/typescript/](adapter/typescript/)
+
+The Adapter pattern allows objects with incompatible interfaces to work together. It acts as a bridge between two incompatible interfaces by wrapping one object and providing an interface that the client expects.
+
+**Real-world analogy**: A travel adapter that lets you plug your device into different outlet types around the world, converting one plug shape to match the outlet.
+
 ## Repository Structure
 
 ```
 design-patterns/
 ├── README.md                          # This file - repository overview
-├── factory-method/                    # Factory Method pattern examples
+├── factory-method/                    # Factory Method pattern (Creational)
+│   ├── java/                         # Java implementation
+│   │   ├── README.md                 # Detailed Java-specific guide
+│   │   └── src/                      # Java source code
+│   └── typescript/                   # TypeScript implementation
+│       ├── README.md                 # Detailed TypeScript-specific guide
+│       └── src/                      # TypeScript source code
+├── adapter/                          # Adapter pattern (Structural)
 │   ├── java/                         # Java implementation
 │   │   ├── README.md                 # Detailed Java-specific guide
 │   │   └── src/                      # Java source code
