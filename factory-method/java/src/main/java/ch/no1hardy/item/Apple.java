@@ -15,6 +15,7 @@ public class Apple implements Item {
 
     /**
      * Constructor to initialize the apple with a specific price.
+     *
      * @param price The price of the apple.
      */
     public Apple(int price) {
@@ -26,6 +27,7 @@ public class Apple implements Item {
      * This is common behavior defined in the Item interface.
      * It is implemented specifically for the Apple class.
      */
+    @Override
     public void use() {
         System.out.println("You just ate an apple.");
     }
@@ -33,8 +35,10 @@ public class Apple implements Item {
     /**
      * Gets the price of the apple.
      * This is common behavior defined in the Item interface.
+     *
      * @return The price of the apple.
      */
+    @Override
     public int getPrice() {
         return price;
     }
@@ -42,8 +46,10 @@ public class Apple implements Item {
     /**
      * Sets the price of the apple.
      * This is common behavior defined in the Item interface.
+     *
      * @param price The new price of the apple.
      */
+    @Override
     public void setPrice(int price) {
         this.price = price;
     }

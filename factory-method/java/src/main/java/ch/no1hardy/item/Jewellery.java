@@ -15,6 +15,7 @@ public class Jewellery implements Item {
 
     /**
      * Constructor to initialize the jewellery with a specific price.
+     *
      * @param price The price of the jewellery.
      */
     public Jewellery(int price) {
@@ -24,8 +25,10 @@ public class Jewellery implements Item {
     /**
      * Gets the price of the jewellery.
      * This is common behavior defined in the Item interface.
+     *
      * @return The price of the jewellery.
      */
+    @Override
     public int getPrice() {
         return price;
     }
@@ -33,8 +36,10 @@ public class Jewellery implements Item {
     /**
      * Sets the price of the jewellery.
      * This is common behavior defined in the Item interface.
+     *
      * @param price The new price of the jewellery.
      */
+    @Override
     public void setPrice(int price) {
         this.price = price;
     }
@@ -44,6 +49,7 @@ public class Jewellery implements Item {
      * This is common behavior defined in the Item interface.
      * It is implemented specifically for the Jewellery class.
      */
+    @Override
     public void use() {
         System.out.println("You just put on a piece of jewellery.");
         System.out.println("Wait, you are not allowed to try the jewellery before buying it!");

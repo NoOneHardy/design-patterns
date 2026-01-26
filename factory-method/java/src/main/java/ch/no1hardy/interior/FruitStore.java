@@ -10,8 +10,10 @@ import ch.no1hardy.item.Item;
 public class FruitStore extends Store {
     /**
      * Factory method to create and return an Apple item.
+     *
      * @return A new Apple item as an Item for uniform handling.
      */
+    @Override
     public Item createItem() {
         Apple apple = new Apple(2);
         // Additional initialization or configuration can be done here if needed

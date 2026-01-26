@@ -10,8 +10,10 @@ import ch.no1hardy.item.Jewellery;
 public class Jeweler extends Store {
     /**
      * Factory method to create and return a Jewellery item.
+     *
      * @return A new Jewellery item as an Item for uniform handling.
      */
+    @Override
     public Item createItem() {
         Jewellery jewellery = new Jewellery(100);
         // Additional initialization or configuration can be done here if needed
