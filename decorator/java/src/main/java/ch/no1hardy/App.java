@@ -16,12 +16,12 @@ public class App {
         carrot.eat();
 
         System.out.println("\nEating a decorated spider eye:");
-        Eatable spiderEye = new PoisonEatableDecorator(
-                new SpiderEye()
-        );
+        // Decorate the spider eye with poison effect
+        Eatable spiderEye = new PoisonEatableDecorator(new SpiderEye());
         spiderEye.eat();
 
         System.out.println("\nEating a puffer fish with multiple decorators:");
+        // Nest multiple decorators
         Eatable pufferFish = new PoisonEatableDecorator(
                 new NauseaEatableDecorator(
                         new PufferFish()

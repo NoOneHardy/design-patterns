@@ -7,6 +7,9 @@ public class NauseaEatableDecorator extends BaseEatableDecorator {
         super(eatable);
     }
 
+    /**
+     * Custom implementation of the eat method to add side effects before and/or after eating.
+     */
     @Override
     public void eat() {
         System.out.println("You don't feel nauseous yet...");
